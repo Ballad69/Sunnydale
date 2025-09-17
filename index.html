@@ -4,32 +4,54 @@
   <meta charset="UTF-8">
   <title>Sunnydale School</title>
   <style>
-    h1 {
-      font-size: 24px;
-      font-weight: bold;
-      color: #1E90FF;
-    }
     body {
       font-family: 'Arial', sans-serif;
+      background-color: #fdfaf6; /* soft warm background */
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #7B2C2C; /* deep burgundy for prestige */
     }
     h2.mission {
-      color: #32CD32;
+      color: #B45F06; /* warm earthy brown */
     }
     h2#upcoming-events {
-      color: #FFA07A;
-      background-color: #FFFFE0;
+      color: #8B4513; /* saddle brown */
+      background-color: #FFF3E0; /* light warm background */
+      padding: 4px 8px;
+      border-left: 4px solid #B45F06;
     }
     h2.contact {
-      color: #20B2AA;
+      color: #2F4F4F; /* dark slate for professional tone */
     }
     .outdoor {
-      background-color: #AFEEEE;
+      background-color: #FAE5D3; /* soft peach */
       padding: 5px;
-      border: 1px solid #B0E0E6;
+      border: 1px solid #E6B17E;
     }
     .section {
-      background-color: #f8f3f3;
-      padding: 10px;
+      background-color: #f6f2ee;
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+    a {
+      color: #7B2C2C;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li span {
+      font-weight: bold; 
+      color: #C0392B; /* deep red highlight */
     }
   </style>
 </head>
@@ -37,12 +59,14 @@
   <h1>Sunnydale School</h1>
   <h2 class="mission">Mission Statement</h2>
   <p>Sunnydale School is dedicated to nurturing young minds and fostering a lifelong love of learning, creativity, and community engagement.</p>
+  
   <h2 id="upcoming-events">Upcoming Events</h2>
   <ul>
-    <li data-event-type="indoor" title="Event Type: Indoor">Science Fair - <span style="font-weight: bold; color: red;">June 10</span></li>
-    <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">Art Exhibition - <span style="font-weight: bold; color: red;">June 15</span></li>
-    <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">Sports Day - <span style="font-weight: bold; color: red;">June 20</span></li>
+    <li data-event-type="indoor" title="Event Type: Indoor">Science Fair - <span>June 10</span></li>
+    <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">Art Exhibition - <span>June 15</span></li>
+    <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">Sports Day - <span>June 20</span></li>
   </ul>
+  
   <h2 class="contact">Contact Us</h2>
   <div class="section">
     <p>Email: <a href="mailto:info@sunnydale.edu" title="Click to copy email">info@sunnydale.edu</a></p>
